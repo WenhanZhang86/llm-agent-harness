@@ -1,0 +1,75 @@
+{
+  "run_id": "20260629T151711Z-118d2c84",
+  "task": "List the files inside the providers directory and mention the DeepSeek adapter.",
+  "status": "completed",
+  "final": "Files inside the providers directory: __init__.py, __pycache__/, anthropic.py, azure_openai.py, base.py, deepseek.py, echo.py, gemini.py, groq.py, ollama.py, openai.py, openai_compatible.py. The DeepSeek adapter is deepseek.py.",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an agent running in a harness. Use tools when useful. Return a final answer once the task is complete."
+    },
+    {
+      "role": "user",
+      "content": "List the files inside the providers directory and mention the DeepSeek adapter."
+    },
+    {
+      "role": "assistant",
+      "step": 1,
+      "thought": "I need to list the files inside the providers directory first.",
+      "tool_calls": [
+        {
+          "name": "list_dir",
+          "arguments": {
+            "path": "providers"
+          }
+        }
+      ],
+      "final": null,
+      "provider": "DeepSeekProvider",
+      "model": "deepseek-v4-flash",
+      "usage": {
+        "prompt_tokens": 599,
+        "completion_tokens": 103,
+        "total_tokens": 702,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 41
+        },
+        "prompt_cache_hit_tokens": 512,
+        "prompt_cache_miss_tokens": 87
+      }
+    },
+    {
+      "role": "tool",
+      "name": "list_dir",
+      "arguments": {
+        "path": "providers"
+      },
+      "content": "{\"ok\": true, \"result\": [\"__init__.py\", \"__pycache__/\", \"anthropic.py\", \"azure_openai.py\", \"base.py\", \"deepseek.py\", \"echo.py\", \"gemini.py\", \"groq.py\", \"ollama.py\", \"openai.py\", \"openai_compatible.py\"]}"
+    },
+    {
+      "role": "assistant",
+      "step": 2,
+      "thought": "The list_dir tool returned the files in the providers directory. The DeepSeek adapter is deepseek.py.",
+      "tool_calls": [],
+      "final": "Files inside the providers directory: __init__.py, __pycache__/, anthropic.py, azure_openai.py, base.py, deepseek.py, echo.py, gemini.py, groq.py, ollama.py, openai.py, openai_compatible.py. The DeepSeek adapter is deepseek.py.",
+      "provider": "DeepSeekProvider",
+      "model": "deepseek-v4-flash",
+      "usage": {
+        "prompt_tokens": 973,
+        "completion_tokens": 237,
+        "total_tokens": 1210,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 127
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 717
+      }
+    }
+  ]
+}

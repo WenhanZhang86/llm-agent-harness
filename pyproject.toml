@@ -1,0 +1,18 @@
+[project]
+name = "llm-agent-harness"
+version = "0.1.0"
+description = "A small, model-agnostic harness for running and testing LLM agents with tools."
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi",
+  "uvicorn",
+]
+
+[project.scripts]
+agent-harness = "agent_harness.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["agent_harness*", "providers*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

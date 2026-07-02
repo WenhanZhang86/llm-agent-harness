@@ -1,0 +1,53 @@
+{
+  "models": {
+    "deepseek_flash": {
+      "provider": "deepseek",
+      "command": "python3 -m providers.deepseek",
+      "env": {
+        "DEEPSEEK_MODEL": "deepseek-v4-flash"
+      }
+    },
+    "deepseek_pro": {
+      "provider": "deepseek",
+      "command": "python3 -m providers.deepseek",
+      "env": {
+        "DEEPSEEK_MODEL": "deepseek-v4-pro"
+      }
+    },
+    "openai_mini": {
+      "provider": "openai",
+      "command": "python3 -m providers.openai",
+      "env": {
+        "OPENAI_MODEL": "gpt-4o-mini"
+      }
+    },
+    "openai_gpt55": {
+      "provider": "openai",
+      "command": "python3 -m providers.openai",
+      "env": {
+        "OPENAI_MODEL": "gpt-5.5"
+      }
+    },
+    "claude_sonnet": {
+      "provider": "anthropic",
+      "command": "python3 -m providers.anthropic",
+      "env": {
+        "ANTHROPIC_MODEL": "claude-sonnet-4-5"
+      }
+    },
+    "gemini_pro": {
+      "provider": "gemini",
+      "command": "python3 -m providers.gemini",
+      "env": {
+        "GEMINI_MODEL": "gemini-2.5-pro"
+      }
+    },
+    "groq_llama": {
+      "provider": "groq",
+      "command": "python3 -m providers.groq",
+      "env": {
+        "GROQ_MODEL": "llama-3.1-70b-versatile"
+      }
+    }
+  }
+}

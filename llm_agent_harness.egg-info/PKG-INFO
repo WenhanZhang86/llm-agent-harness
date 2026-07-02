@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: llm-agent-harness
+Version: 0.1.0
+Summary: A small, model-agnostic harness for running and testing LLM agents with tools.
+Requires-Python: >=3.10
+Requires-Dist: fastapi
+Requires-Dist: uvicorn

@@ -1,3 +1,0 @@
-task_id,status,passed,failure_category,latency_seconds,tokens,cost_usd,tools,failed_checks,judge_score,error
-echo_list_workspace#run1,completed,True,success,0.1189,0,,list_dir,,,
-echo_list_workspace#run2,completed,True,success,0.0772,0,,list_dir,,,

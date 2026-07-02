@@ -1,0 +1,101 @@
+{
+  "tasks_path": "/Users/tomzhang/Desktop/llm-agent-harness/evals/echo-smoke.jsonl",
+  "providers": [
+    {
+      "provider": "echo",
+      "command": "python3 -m providers.echo",
+      "results_path": "/Users/tomzhang/Desktop/llm-agent-harness/evals/results/echo/eval-20260701T055322Z.jsonl",
+      "report_path": "/Users/tomzhang/Desktop/llm-agent-harness/evals/reports/echo/eval-20260701T055322Z.md",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "success_rate": 1.0,
+        "tool_accuracy": 1.0,
+        "average_latency_seconds": 0.10798654239624739,
+        "total_cost_usd": null,
+        "known_cost_usd": 0,
+        "cost_known": false,
+        "missing_cost_count": 1,
+        "total_tokens": 0,
+        "failure_categories": {
+          "success": 1
+        }
+      },
+      "results": [
+        {
+          "task_id": "echo_list_workspace",
+          "task": "List files in the workspace.",
+          "status": "completed",
+          "passed": true,
+          "checks": {
+            "status": true,
+            "expected_tools": true,
+            "forbidden_tools": true,
+            "expected_text": true,
+            "expected_any_text": true,
+            "expected_observation": true
+          },
+          "latency_seconds": 0.10798654239624739,
+          "tool_calls": [
+            {
+              "name": "list_dir",
+              "arguments": {
+                "path": "."
+              }
+            }
+          ],
+          "usage": {},
+          "cost_usd": null,
+          "cost_breakdown_usd": {
+            "prompt": null,
+            "completion": null,
+            "embedding": 0.0,
+            "tool": 0.0,
+            "total": null
+          },
+          "failure_category": "success",
+          "final": "Echo provider finished with observation: {\"ok\": true, \"result\": [\".env.example\", \".git/\", \"README.md\", \"agent_harness/\", \"configs/\", \"dashboard/\", \"evals/\", \"notes/\", \"providers/\", \"pyproject.toml\", \"rag/\", \"runs/\"]}",
+          "run_id": "20260701T055322Z-1dbc7f82",
+          "judge": null,
+          "failure_details": {
+            "failed_checks": [],
+            "expected_tools": [
+              "list_dir"
+            ],
+            "actual_tools": [
+              "list_dir"
+            ],
+            "forbidden_tools": [],
+            "expected_text": [
+              "README.md",
+              "providers/"
+            ],
+            "expected_any_text": [],
+            "expected_observation": [],
+            "recommendation": "Inspect the transcript and failed checks.",
+            "final_preview": "Echo provider finished with observation: {\"ok\": true, \"result\": [\".env.example\", \".git/\", \"README.md\", \"agent_harness/\", \"configs/\", \"dashboard/\", \"evals/\", \"notes/\", \"providers/\", \"pyproject.toml\", \"rag/\", \"runs/\"]}",
+            "observation_preview": "{\"ok\": true, \"result\": [\".env.example\", \".git/\", \"README.md\", \"agent_harness/\", \"configs/\", \"dashboard/\", \"evals/\", \"notes/\", \"providers/\", \"pyproject.toml\", \"rag/\", \"runs/\"]}",
+            "attempt": 1,
+            "max_attempts": 2
+          },
+          "error": null
+        }
+      ]
+    }
+  ],
+  "leaderboard": [
+    {
+      "provider": "echo",
+      "success_rate": 1.0,
+      "tool_accuracy": 1.0,
+      "average_latency_seconds": 0.10798654239624739,
+      "total_cost_usd": null,
+      "known_cost_usd": 0,
+      "cost_known": false,
+      "missing_cost_count": 1,
+      "total_tokens": 0,
+      "failed": 0
+    }
+  ]
+}

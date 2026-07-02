@@ -1,0 +1,20 @@
+{
+  "dataset": {
+    "path": "/Users/tomzhang/Desktop/llm-agent-harness/evals/tasks.jsonl",
+    "sha256": "5e0d105764e12d2e452fd3bbeb8d028d4decc22e425f6dcec3b2b27847cdc6e7",
+    "task_count": 41,
+    "bytes": 12701
+  },
+  "total": 41,
+  "passed": 39,
+  "failed": 2,
+  "success_rate": 0.9512195121951219,
+  "average_latency_seconds": 9.480966594547215,
+  "total_tokens": 255465,
+  "total_cost_usd": 0.106797401,
+  "failure_categories": {
+    "hallucination": 1,
+    "success": 39,
+    "tool_error": 1
+  }
+}

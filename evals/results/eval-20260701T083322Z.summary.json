@@ -1,0 +1,18 @@
+{
+  "dataset": {
+    "path": "/Users/tomzhang/Desktop/llm-agent-harness/evals/echo-smoke.jsonl",
+    "sha256": "a8985fd9fafc3eb6da2a619291df1917e77e68f0c27ee28c88e1fb1d2c6cef6a",
+    "task_count": 1,
+    "bytes": 188
+  },
+  "total": 1,
+  "passed": 1,
+  "failed": 0,
+  "success_rate": 1.0,
+  "average_latency_seconds": 0.17569362558424473,
+  "total_tokens": 0,
+  "total_cost_usd": 0.0,
+  "failure_categories": {
+    "success": 1
+  }
+}

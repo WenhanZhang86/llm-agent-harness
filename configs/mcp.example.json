@@ -1,0 +1,11 @@
+{
+  "servers": {
+    "example": {
+      "transport": "stdio",
+      "command": "python3",
+      "args": ["tests/fake_mcp_server.py"],
+      "permissions": ["network"],
+      "timeout_seconds": 30
+    }
+  }
+}

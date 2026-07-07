@@ -1,0 +1,27 @@
+{
+  "default_currency": "USD",
+  "prices_per_1m_tokens": {
+    "deepseek-v4-flash": {
+      "input": 0.14,
+      "output": 0.28,
+      "cache_hit": 0.0028
+    },
+    "deepseek-v4-pro": {
+      "input": 0.435,
+      "output": 0.87,
+      "cache_hit": 0.003625
+    },
+    "gpt-4o-mini": {
+      "input": 0.75,
+      "output": 4.5
+    },
+    "gpt-5.4-mini": {
+      "input": 0.75,
+      "output": 4.5
+    },
+    "gpt-5.5": {
+      "input": 5.0,
+      "output": 30.0
+    }
+  }
+}

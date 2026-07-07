@@ -1,0 +1,1 @@
+{"id":"echo_list_workspace","task":"List files in the workspace.","expect_status":"completed","expect_tools":["list_dir"],"expect_contains":["README.md","providers/"],"allow_shell":false}

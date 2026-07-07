@@ -1,0 +1,4 @@
+{"id":"rag_deepseek_eval_howto","question":"How do I run the DeepSeek evaluation benchmark?","expected_sources":["README.md"],"expected_answer_contains":["DEEPSEEK_API_KEY","evals/tasks.jsonl","providers.deepseek"]}
+{"id":"rag_compare_models","question":"How do I compare DeepSeek and OpenAI on the same benchmark?","expected_sources":["README.md"],"expected_answer_contains":["compare","provider","providers.openai","providers.deepseek"]}
+{"id":"rag_pdf_not_implemented","question":"Does this project currently implement PDF ingestion?","expected_sources":["README.md"],"expected_answer_contains":["PDF"],"forbidden_answer_contains":["already supports PDF upload"]}
+{"id":"rag_dashboard_howto","question":"How do I generate and open the dashboard?","expected_sources":["README.md"],"expected_answer_contains":["dashboard","open dashboard/index.html"]}

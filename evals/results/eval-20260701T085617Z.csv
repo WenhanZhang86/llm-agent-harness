@@ -1,0 +1,2 @@
+task_id,status,passed,failure_category,latency_seconds,tokens,cost_usd,tools,failed_checks,judge_score,error
+echo_list_workspace,completed,True,success,0.0953,0,,list_dir,,,
